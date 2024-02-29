@@ -1,0 +1,37 @@
+#Student Name=
+print("Household budget calculator")
+num_adults = int(input("How many adult are in the family"))
+num_child = int(input("How many children are in the family?"))
+
+
+food_budget = 300
+cost_food_adult = 50
+cost_food_child = 35
+
+inflationrate = float(input("What is the inflation rate?"))
+
+child_allowance = 140
+
+print("Children's allowance total: €", child_allowance*num_child)
+print("Total household food cost: €", cost_food_adult*num_adults+cost_food_child*num_child)
+print("Total household food cost with inflation:€",  cost_food_adult*num_adults + cost_food_adult*num_adults/100*inflationrate +cost_food_child*num_child +cost_food_child*num_child/100*inflationrate)
+
+Student Name=
+print("Household budget calculator")
+num_adults = int(input("How many adult are in the family"))
+num_child = int(input("How many children are in the family?"))
+
+
+food_budget = 300
+cost_food_adult = 50
+cost_food_child = 35
+
+inflationrate = float(input("What is the inflation rate?"))
+
+child_allowance = 140
+
+print("Children's allowance total: €", child_allowance*num_child)
+print("Total household food cost: €", cost_food_adult*num_adults+cost_food_child*num_child)
+print("Total household food cost with inflation:€",  cost_food_adult*num_adults + cost_food_adult*num_adults/100*inflationrate +cost_food_child*num_child +cost_food_child*num_child/100*inflationrate)(round(2))
+
+
