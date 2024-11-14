@@ -1,0 +1,46 @@
+#Question 1
+#Name: Aisling walsh
+from random import choice
+
+fruits = ['apple','cherry','orange']
+
+random_fruit_1 = choice(fruits)
+print("Random fruit 1:",random_fruit_1) #Part(i)
+random_fruit_2 = choice(fruits)
+print("Random fruit 2:",random_fruit_2) #Part(ii)
+random_fruit_3 = choice(fruits)
+print("Random fruit 3:",random_fruit_3) #Part(ii)
+
+print("First fruit is",random_fruit_1) #Part(iii)
+if random_fruit_1 == "cherry" and random_fruit_2 == "cherry": #Part(v)
+    print("First pair are cherries")
+    print("First pair match")
+elif random_fruit_1 == random_fruit_2:
+    print("First pair match") #Part(iv)
+elif random_fruit_1 == random_fruit_3 or random_fruit_2 == random_fruit_3: #part(vi)
+    print("Matching pair")
+appleCount = 0
+cherryCount = 0
+orangeCount = 0
+count = (appleCount + cherryCount + orangeCount)
+while count <100:
+    if random_fruit_1 == "cherry" or random_fruit_2 == "cherry" or random_fruit_3 == "cherry":
+        cherryCount = cherryCount + 1
+    elif random_fruit_1 == "apple" or random_fruit_2 == "apple" or random_fruit_3 == "apple":
+        appleCount = appleCount + 1
+    else:
+        orangeCount = orangeCount + 1
+    
+print(appleCount)
+print(cherryCount)
+print(orangeCount)
+        
+#Question 2
+#Name: Aisling Walsh
+
+print("Split Bill Calculator") #Part (1)
+bill = float(input("How much is the bill?")) #Part(2)
+people = int(input("How many people will be splitting the bill?")) #Part(3)
+amountOwed = round(bill/people,2) #Part(4)
+print("You owe each:",amountOwed) #Part(4)
+
